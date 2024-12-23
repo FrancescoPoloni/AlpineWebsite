@@ -8,48 +8,72 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="buttons.css">
+    <link rel="stylesheet" href="index.cssco">
+
+    <!-- BX Slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $(".slider").bxSlider({
+                auto: true,
+                stopAutoOnClick: true,
+                pager: true,
+                mode: "fade",
+
+            });
+        });
+    </script>
+
 </head>
 
+
+
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand align-content-center" href="#">
-                <img src="img/alpineLogo.jpg" alt="ALPINE" width="70" height="70">
-                ALPINE POLIMI
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-                <div class="navbar-nav mx-auto mb-2 mb-lg-0">
-                    <li class="nav-item align-content-center">
-                        <a class="nav-link active" aria-current="page" href="#">HOME</a>
-                    </li>
-                    <li class="nav-item align-content-center">
-                        <a class="nav-link" href="#">CHI SIAMO</a>
-                    </li>
-                    <li class="nav-item align-content-center">
-                        <a class="nav-link" href="#">ISCRIVITI</a>
-                    </li>
-                    <li class="nav-item align-content-center">
-                        <a class="nav-link" href="#">GALLERIA</a>
-                    </li>
-                    <li class="nav-item align-content-center">
-                        <a class="nav-link" href="#">CALENDARIO</a>
-                    </li>
-                    <li class="nav-item align-content-center">
-                        <a class="nav-link" href="#">INFO</a>
-                    </li>
-                    <li class="nav-item align-content-center" href="#">
-                        <img src="img/InstagramLogo.png" alt="ALPINE" width="20" height="20">
-                    </li>
-                    <li class="nav-item align-content-center mt-3 mt-lg-0 mx-lg-3">
-                        <button class="btn custom-btn" type="button">ISCRIVITI</button>
-                    </li>
-                </div>
-            </div>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand align-content-center" href="#">
+            <img src="img/alpineLogo.jpg" alt="ALPINE" width="70" height="70">
+            ALPINE POLIMI
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item align-content-center">
+                    <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                </li>
+                <li class="nav-item align-content-center">
+                    <a class="nav-link" href="#">CHI SIAMO</a>
+                </li>
+                <li class="nav-item align-content-center">
+                    <a class="nav-link" href="#">ISCRIVITI</a>
+                </li>
+                <li class="nav-item align-content-center">
+                    <a class="nav-link" href="#">GALLERIA</a>
+                </li>
+                <li class="nav-item align-content-center">
+                    <a class="nav-link" href="#">CALENDARIO</a>
+                </li>
+                <li class="nav-item align-content-center">
+                    <a class="nav-link" href="#">INFO</a>
+                </li>
+                <!-- Icona Instagram sempre visibile con dimensione ridotta -->
+                <li class="nav-item align-content-center">
+                    <svg class="instagram-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="width: 24px; height: 24px;">
+                        <path fill="#194088" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
+                    </svg>
+                </li>
+                <li class="nav-item align-content-center mt-3 mt-lg-0 mx-lg-3">
+                    <button class="btn custom-btn" type="button">ISCRIVITI</button>
+                </li>
+            </ul>
         </div>
-    </nav>
+    </div>
+</nav>
 
     <div class="container-fluid align-content-center text-center mx-auto" style="background-color: #194088; color: #fff; padding: 10px;width: 100%;">
         <div>
@@ -64,15 +88,14 @@
         </div>
     </div>
 
-    <div class="container-fluid align-content-center text-center mx-auto" style="background-color: #fff; color: #000; width: 100%;padding: 0px;">
-            <div class="container-fluid text-center" style="background-color: #fff; color: #000; padding: 0;">
-                <div class="row no-gutters">
-                    <div>
-                        <img src="img/vacanza-invernale-dolomiti.jpg" class="img-fluid" alt="ALPINEScritta" style="width: 100%; height: 100%;">
-                    </div>
-                </div>
-            </div>
-    </div>
+
+<div class="slider">
+    <div><img src="img/fotogruppo.jpg" class="img-fluid"/></div>
+    <div><img src="img/magliette.png" class="img-fluid"/></div>
+    <div><img src="img/tramonto.jpg" class="img-fluid"/></div>
+</div>
+
+<!-- <img src="img/vacanza-invernale-dolomiti.jpg" class="img-fluid w-100" alt="ALPINEScritta"> -->
 
     <div class="container-fluid align-content-center text-center mx-auto" style="background-color: #194088; color: #fff; padding: 10px;width: 100%;">
         <div>
@@ -82,46 +105,54 @@
         </div>
     </div>
 
-    <div class="container-fluid align-content-center text-center mx-auto " style="background-color: #fff; color: #000; padding: 10px;width: 100%;">
+    <div class="container-fluid align-content-center text-center-giu mx-auto " style="background-color: #fff; color: #000; padding: 10px;width: 100%;">
         <div>
             <div class="row align-content-center mx-auto mt-2 mb-2" style="font-size: 30px">
                 <div class="col">
-                    <div class="card mx-auto mb-3" style="width: 20rem; height: 40rem;">
+                    <div class="card mx-auto mb-3" style="width: 18rem; height: 38rem;">
                         <img src="img/arrampicataInPalestra.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h2 class="card-title">Arrampicata in Palestra</h2>
-                            <h4 class="card-text">In collaborazione con Svolta abbiamo organizzato un incontro per principianti.</h4>
-                            <a href="#" class="btn custom-btn">Go somewhere</a>
+                        <div class="card-body d-flex flex-column">
+                            <div class="flex-grow-1">
+                                <h2 class="card-title text-center">Arrampicata in palestra</h2>
+                                <h4 class="card-text">Sabato 14/12 in collaborazione con Svolta ci sarà una lezione di arrampicata per principianti</h4>
+                            </div>
+                            <a href="#" class="btn custom-btn ">Go somewhere</a>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card mx-auto mb-3" style="width: 20rem; height: 40rem;">
+                    <div class="card mx-auto mb-3" style="width: 18rem; height: 38rem;">
                         <img src="img/bismantova.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h2 class="card-title">Card title</h2>
-                            <h4 class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</h4>
-                            <a href="#" class="btn custom-btn">Go somewhere</a>
+                        <div class="card-body d-flex flex-column">
+                            <div class="flex-grow-1">
+                                <h2 class="card-title">Climb-in Bismantova</h2>
+                                <h4 class="card-text">Vieni ad arrmpicare con noi il 26-27 ottobre sull'iconica roccia di Bismantova</h4>
+                            </div>
+                            <a href="#" class="btn custom-btn ">Go somewhere</a>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card mx-auto mb-3" style="width: 20rem; height: 40rem;">
+                    <div class="card mx-auto mb-3" style="width: 18rem; height: 38rem;">
                         <img src="img/soccorsoAlpino.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h2 class="card-title">Card title</h2>
-                            <h4 class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</h4>
-                            <a href="#" class="btn custom-btn">Go somewhere</a>
+                        <div class="card-body d-flex flex-column">
+                            <div class="flex-grow-1">
+                                <h2 class="card-title">Soccorso Alpino</h2>
+                                <h4 class="card-text">Il 19 Dicembre i tecnici del soccorso alpino ci racconteranno come si organizza un intervento di soccorso</h4>
+                            </div>
+                            <a href="#" class="btn custom-btn ">Go somewhere</a>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card mx-auto mb-3" style="width: 20rem; height: 40rem;">
+                    <div class="card mx-auto mb-3" style="width: 18rem; height: 38rem;">
                         <img src="img/Tao.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h2 class="card-title">Card title</h2>
-                            <h4 class="card-text" >Some quick example text to build on the card title and make up the bulk of the card's content.</h4>
-                            <a href="#" class="btn custom-btn">Go somewhere</a>
+                        <div class="card-body d-flex flex-column">
+                            <div class="flex-grow-1">
+                                <h2 class="card-title">Tao</h2>
+                                <h4 class="card-text">Bau bau</h4>
+                            </div>
+                            <a href="#" class="btn custom-btn ">Go somewhere</a>
                         </div>
                     </div>
                 </div>
